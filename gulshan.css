@@ -839,3 +839,96 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 768px) {
+    /* 🔥 MOBILE FIXES (keeps desktop unchanged) */
+@media (max-width: 768px) {
+
+    /* General spacing */
+    .container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 4rem 0 !important;
+    }
+
+    /* NAV */
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* overrides huge clamp */
+        letter-spacing: 0.08em;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+    }
+
+    .hero-tagline {
+        font-size: 0.7rem;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 4rem 0;
+    }
+
+    /* MENU */
+    .menu-page {
+        padding: 4rem 0;
+    }
+
+    .menu-section-title {
+        margin-left: 0.5rem;
+    }
+
+    .menu-list-item {
+        padding: 0.7rem;
+    }
+
+    .menu-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item-price {
+        margin-top: 0.2rem;
+    }
+
+    /* ❌ BIG FIX */
+    .menu-note {
+        padding-left: 0;   /* THIS was breaking everything */
+        text-align: center;
+    }
+
+    /* IMAGE SAFETY */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 4rem 0;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+}
+}
