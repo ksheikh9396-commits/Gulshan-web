@@ -893,6 +893,10 @@ margin-top:1.5rem;
         padding: 4rem 0 !important;
     }
 
+    .menu-section-title {
+        text-align: center;
+    }
+
     /* NAV */
 
     .nav-links {
