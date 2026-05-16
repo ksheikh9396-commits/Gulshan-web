@@ -140,7 +140,22 @@ body {
     transition: all 0.3s ease;
 }
 
+.nav.open .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
 
+        background: var(--color-navy);
+        padding: 5rem 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        z-index: 1500;
+    }
 
 /* When menu is open → turn hamburger into X */
 .nav.open .nav-toggle span:nth-child(1) {
@@ -154,6 +169,7 @@ body {
 .nav.open .nav-toggle span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
+
 
 /* Hero */
 .hero {
