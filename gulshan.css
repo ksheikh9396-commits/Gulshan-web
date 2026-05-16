@@ -1025,6 +1025,10 @@ body {
         padding: 4rem 0;
     }
 
+    .section-label {
+        margin-top: 2rem;
+    }
+
     /* FOOTER */
     .footer {
         padding: 1.5rem 1rem;
