@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulshan Menu</title>
+    <title>Gulshan Menu | Our Menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="gulshan.css">
@@ -26,7 +26,6 @@
             Cart <span class="cart-count" id="cart-count">0</span>
         </button>
     </nav>
-
     <header class="hero hero--small">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -41,17 +40,18 @@
 
                 <div class="menu-page-grid">
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style="padding-left: 500px;">Breakfast</h3>
+                        <h3 class="menu-section-title">Breakfast</h3>
                         <ul class="menu-list" style ="gap:8rem;">
                            <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Toasted Bread" data-price="50" aria-label="Add Toasted Bread to cart">
                                <img class="menu-item-image" src="toast.png" alt="toasted bread">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Toasted Bread</span>
-                                        <span class="menu-item-price">ksh50/=</span>
                                     </div>
                                     <p class="menu-item-desc">Crunchy toasted white bread served warm.</p>
-                                    
+                                <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price">ksh50/=</span>
+                                     </div>
                                      </div>
                                 </li>
                                 </div>
@@ -61,10 +61,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">2 French Toast</span>
-                                        <span class="menu-item-price">ksh230/=</span>
                                     </div>
-                                    <p class="menu-item-desc">Pan cooked bread sauteed in eggs, soft and golden.</p>
-                                   
+                                    <p class="menu-item-desc">Pan cooked bread sautéed in eggs, soft and golden.</p>
+                                   <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price">ksh230/=</span>
+                                     </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Omelette" data-price="170" aria-label="Add Omelette to cart">
@@ -72,10 +73,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Omelette</span>
-                                        <span class="menu-item-price">ksh170/=</span>
                                     </div>
                                     <p class="menu-item-desc">Fluffy eggs, lightly seasoned.</p>
-                                  
+                                  <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price">ksh170/=</span>
+                                     </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Fried Eggs" data-price="150" aria-label="Add Fried Eggs to cart">
@@ -83,10 +85,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Fried Eggs</span>
-                                        <span class="menu-item-price">ksh150/=</span>
                                     </div>
                                     <p class="menu-item-desc">Classic fried eggs, cooked to order.</p>
-                                    
+                                <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price">ksh150/=</span>
+                                     </div>
                                 </div>
                             
                             </li>
@@ -95,7 +98,7 @@
 
                     <section class="menu-section">
                          <div class="menu-container">
-                        <h3 class="menu-section-title" style="padding-left: 700px;">Tea & Coffee</h3>
+                        <h3 class="menu-section-title">Tea & Coffee</h3>
                         <ul class="menu-list">
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Special Tea" data-small="100" data-large="150" aria-label="Add Special Tea to cart">
                                <img class="menu-item-image" src="special tea.jpg" alt="special tea">
@@ -186,9 +189,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Glass of Milk (Cow)</span>
-                                        <span class="menu-item-price">ksh100/=</span>
                                     </div>
                                     <p class="menu-item-desc">Served chilled or warm.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price">ksh100/=</span>
+                                     </div>
                                 </div>
                             </li>
                         </ul>
@@ -196,8 +201,8 @@
                     </section>
 
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style="padding-left: 700px;">Meat dishes</h3>
-                        <p class="menu-item-desc" style="padding-left: 600px; margin-top:1.5rem; margin-bottom: 2rem;">All meat dishes come with mutton soup, and served with medium fries.
+                        <h3 class="menu-section-title">Meat dishes</h3>
+                        <p class="add-info" >All meat dishes come with mutton soup, and served with medium fries.
 
                         </p>
                         <ul class="menu-list menu-list-item--selectable" tabindex="0" role="button" data-name="Steak" data-price="650" aria-label="Add Steak to cart">
@@ -206,9 +211,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Beef Steak </span>
-                                        <span class="menu-item-price">ksh650/=</span>
                                     </div>
                                     <p class="menu-item-desc">Fried beef steak served with fries and salad on the side.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh650/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Fried Chicken" data-price="500" aria-label="Add Fried Chicken to cart">
@@ -216,9 +223,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Fried Chicken</span>
-                                        <span class="menu-item-price">ksh500/=</span>
                                     </div>
                                     <p class="menu-item-desc">perfectly golden quarter fried chicken served with a side of crispy fries and fresh salad.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh500/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Mbuzi" data-price="650" aria-label="Add Mbuzi to cart">
@@ -226,9 +235,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Goat meat</span>
-                                        <span class="menu-item-price">ksh650/=</span>
                                     </div>
                                     <p class="menu-item-desc">Aleso or Dried fried somali goat meats served with fries and salad on the side.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh650/=</span>
+                                        </div>
                                 </div>
                             </li>
                    
@@ -237,9 +248,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Maini</span>
-                                        <span class="menu-item-price">ksh650/=</span>
                                     </div>
                                     <p class="menu-item-desc">Goat liver pan cooked with vegetables and served with fries and salad on the side.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh650/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Cotalleti" data-price="650" aria-label="Add Cotalleti to cart">
@@ -247,9 +260,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Cotalleti</span>
-                                        <span class="menu-item-price">ksh650/=</span>
                                     </div>
                                     <p class="menu-item-desc">Fried beef steak coated with eggs and breadcrumbs.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh650/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Costato" data-price="650" aria-label="Add Costato to cart">
@@ -257,25 +272,29 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Costato</span>
-                                        <span class="menu-item-price">ksh650/=</span>
                                     </div>
                                     <p class="menu-item-desc">Rib eye steak rubbed with special spices.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh650/=</span>
+                                        </div>
                                 </div>
                             </li>
                              </ul>
                     </section>
 
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style ="padding-left: 650px;">Pasta & Rice Dishes</h3>
+                        <h3 class="menu-section-title">Pasta & Rice Dishes</h3>
                         <ul class="menu-list">
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Spaghetti Bolognese " data-price="300" aria-label="Add Spaghetti Bolognese to cart">
                                 <img class="menu-item-image" src="spaghetti.png" alt="Spaghetti bolognese">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Spaghetti Bolognese</span>
-                                        <span class="menu-item-price">ksh300/=</span>
                                     </div>
                                     <p class="menu-item-desc">pasta served with a sauce of mince meat,tomato,onion,and herbs </p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh300/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Saldato" data-price="400" aria-label="Add Saldato to cart">
@@ -283,9 +302,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Saldato</span>
-                                        <span class="menu-item-price">ksh400/=</span>
                                     </div>
                                     <p class="menu-item-desc">Somali-style spaghetti. Stir-fried pasta.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh400/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Pilau" data-price="300" aria-label="Add Pilau to cart">
@@ -293,9 +314,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Pilau</span>
-                                        <span class="menu-item-price">ksh300/=</span>
                                     </div>
                                     <p class="menu-item-desc">A fragrant, one-pot dish of tender goat meat and spiced brown rice infused with deep, aromatic flavors.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh300/=</span>
+                                        </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Biryani" data-price="400" aria-label="Add Biryani to cart">
@@ -303,16 +326,18 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Biryani</span>
-                                        <span class="menu-item-price">ksh400/=</span>
                                     </div>
                                     <p class="menu-item-desc">A vibrant layer of succulent chicken and saffron-stained rice served with a refreshing side of onion and tomato salad.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                            <span class="menu-item-price">ksh400/=</span>
+                                        </div>
                                 </div>
                             </li>
                         </ul>
                     </section>
 
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style="padding-left: 720px;">BBQ</h3>
+                        <h3 class="menu-section-title">BBQ</h3>
                         <ul class="menu-list">
                          <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Chicken tikka" data-leg="300" data-breast="250" aria-label="Add Chicken tikka to cart">
                             <img class="menu-item-image" src="tikka.png" alt="Chicken Tikka">
@@ -332,9 +357,11 @@
                             <div class="menu-item-body">
                               <div class="menu-item-header" style="align-items: flex-start;">
                                <span class="menu-item-name">Mshakiki</span>
-                                <span class="menu-item-price" style="font-size: 0.9rem;">Per stick: Ksh50/=</span>
                              </div>
                                <p class="menu-item-desc">Skewer-grilled beef morsels bursting with zesty coastal spices and a delicious char-grilled finish that melts in your mouth.</p>
+                                <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                    <span class="menu-item-price" style="font-size: 0.9rem;">Ksh50/=</span>
+                                </div>
                           </div>
                          </li>
                          <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Shawarma" data-price="250" aria-label="Add Shawarma to cart">
@@ -342,9 +369,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">shawarma</span>
-                                        <span class="menu-item-price">ksh250/=</span>
                                     </div>
                                     <p class="menu-item-desc">A soft, warm wrap packed with thinly sliced chicken, veggies, and a drizzle of our sauce.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh250/=</span>
+                                    </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Shawarma chips" data-price="300" aria-label="Add Shawarma chips to cart">
@@ -352,9 +381,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Shawarma Chips</span>
-                                        <span class="menu-item-price">ksh300/=</span>
                                     </div>
                                     <p class="menu-item-desc">A mountain of crispy golden fries topped with succulent shawarma shavings,and a generous swirl of our signature sauces</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh300/=</span>
+                                    </div>
                                 </div>
                             </li>
                            <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Naan" data-price="50" aria-label="Add Naan to cart">
@@ -362,9 +393,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Naan</span>
-                                        <span class="menu-item-price">ksh50/=</span>
                                     </div>
                                     <p class="menu-item-desc">thin, round, unleavened flatbread.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh50/=</span>
+                                    </div>
                                 </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Keema chapati" data-price="150" aria-label="Add Keema chapati to cart">
@@ -372,57 +405,78 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Keema Chapati</span>
-                                        <span class="menu-item-price">ksh150/=</span>
                                     </div>
                                     <p class="menu-item-desc">Soft, golden-brown layers of pan-toasted bread filled with a delicious heart of zesty, spice-infused minced beef.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
+                                    </div>
                                 </div>
                             </li>
 
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style="padding-left: 650px;">Snacks & Side Dishes</h3>
+                        <h3 class="menu-section-title">Snacks & Side Dishes</h3>
                         <ul class="menu-list">
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Samosa" data-price="60" aria-label="Add Samosa to cart">
                                 <img class="menu-item-image" src="samosa.png" alt="samosa">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Samosa</span>
-                                        <span class="menu-item-price">ksh60/=</span>
                                     </div>
+                                    <p class="menu-item-desc">Crispy, golden-brown pastry pockets filled with savory minced meat.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh60/=</span>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Kebabs" data-price="40" aria-label="Add Kebabs to cart">
                                 <img class="menu-item-image" src="kebabs" alt="kebab">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Kebabs</span>
-                                        <span class="menu-item-price">ksh40/=</span>
                                     </div>
+                                    <p class="menu-item-desc">flavourful,tender, minced meat, perfectly seasoned and fried.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh40/=</span>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Mahamri" data-price="40" aria-label="Add Mahamri to cart">
                                 <img class="menu-item-image" src="hamri.png" alt="hamri ">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Mahamri</span>
-                                        <span class="menu-item-price">ksh40/=</span>
                                     </div>
+                                    <p class="menu-item-desc">Sweet,soft, fluffy dough.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh40/=</span>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Banana" data-price="20" aria-label="Add Banana to cart">
                                  <img class="menu-item-image" src="banana.png" alt="banana">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Banana</span>
-                                        <span class="menu-item-price">ksh20/=</span>
-                                        </div>
+                                    </div>
+                                    <p class="menu-item-desc">Fresh,sweet banana served on the side.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh20/=</span>
+                                    </div>
+                                </div>
                             </li>
 
                     <section class="menu-section">
-                        <h3 class="menu-section-title" style="padding-left: 670px;">Drinks & Desserts</h3>
+                        <h3 class="menu-section-title">Drinks & Desserts</h3>
                         <ul class="menu-list">
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Sugarcane Juice" data-price="100" aria-label="Add Sugarcane Juice to cart">
                                 <img class="menu-item-image" src="sugarcane.png" alt="sugarcane">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Sugarcane Juice</span>
-                                       <span class="menu-item-price">ksh100/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A refreshing and healthy drink made from fresh sugarcane.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh100/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -431,7 +485,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Tamarind Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A tangy and flavorful drink made from tamarind fruit.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -440,7 +497,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Orange Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span> 
+                                    </div>
+                                    <p class="menu-item-desc">A sweet and refreshing drink made from fresh oranges.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -449,7 +509,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Passion Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A tropical drink made from fresh passion fruit.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -458,7 +521,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Pineapple Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A sweet and tropical drink made from fresh pineapples.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -466,8 +532,11 @@
                                 <img class="menu-item-image" src="avocado.png" alt="avocado">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
-                                        <span class="menu-item-name">Avacado Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span>
+                                        <span class="menu-item-name">Avocado Juice</span>
+                                    </div>
+                                    <p class="menu-item-desc">A creamy and nutritious drink made from fresh avocados.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -476,7 +545,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Mango Juice</span>
-                                        <span class="menu-item-price">ksh150/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A sweet and tropical drink made from fresh mangoes.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span> 
                                     </div>
                                 </div>
                             </li>
@@ -485,7 +557,10 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Beetroot Juice</span>
-                                       <span class="menu-item-price">ksh150/=</span>
+                                    </div>
+                                    <p class="menu-item-desc">A vibrant and earthy drink made from fresh beetroots.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh150/=</span>
                                     </div>
                                 </div>
                             </li>
@@ -495,20 +570,23 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Soda</span>
-                                        <span class="menu-item-price">ksh60/=</span>
                                     </div>
-                                    
+                                    <p class="menu-item-desc">A refreshing, fizzy soda served ice cold.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh60/=</span>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-list-item menu-list-item--selectable" tabindex="0" role="button" data-name="Water" data-price="50" aria-label="Add water to cart">
                                 <img class="menu-item-image" src="water.png" alt="Water 500ml">
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Water 500ML</span>
+                                        </div>
                                        <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
                                 <span class="menu-item-price" style="font-size: 0.9rem;">Small: Ksh50/=</span>
                              <span class="menu-item-price" style="font-size: 0.9rem;">Large: Ksh100/=</span>
                              </div>
-                                    </div>
                                 </div>
                             </li>
                         
@@ -545,9 +623,11 @@
                                 <div class="menu-item-body">
                                     <div class="menu-item-header">
                                         <span class="menu-item-name">Scud Special</span>
-                                        <span class="menu-item-price">ksh200/=</span>
                                     </div>
                                     <p class="menu-item-desc">A combination of fruits and avocado,topped with icecream.</p>
+                                    <div class="menu-item-price-group" style="text-align: right; display: flex; flex-direction: column;">
+                                        <span class="menu-item-price" style="font-size: 0.9rem;">Ksh200/=</span>    
+                                    </div>
                                 </div>
                             </li>
 
@@ -614,6 +694,7 @@
                     <button type="submit" class="btn btn-primary checkout-btn">Checkout on WhatsApp</button>
                 </form>
             </div>
+        </div>
         </div>
     </aside>
     <div class="cart-overlay" id="cart-overlay"></div>

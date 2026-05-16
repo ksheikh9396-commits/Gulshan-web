@@ -64,6 +64,7 @@ body {
     color: var(--color-white);
     text-decoration: none;
     letter-spacing: 0.08em;
+     margin-right: auto;  
 }
 
 .nav-links {
@@ -95,10 +96,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.12);
     color: var(--color-white);
-    border-radius: 999px;
+    border-radius: 900px;
     padding: 0.5rem 0.9rem;
     font-size: 0.85rem;
     cursor: pointer;
+    gap: 2rem;
+    margin-left: 2rem;
 }
 
 .cart-count {
@@ -118,19 +121,39 @@ body {
 .nav-toggle {
     display: none;
     flex-direction: column;
-    gap: 6px;
+    justify-content: center;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    z-index: 2001;
 }
 
 .nav-toggle span {
+    display: block;              /* ✅ IMPORTANT */
     width: 24px;
-    height: 2px;
-    background: var(--color-white);
+    height: 3px;                 /* slightly thicker so visible */
+    background: #ffffff;         /* force visible */
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
+
+
+/* When menu is open → turn hamburger into X */
+.nav.open .nav-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav.open .nav-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav.open .nav-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
 /* Hero */
 .hero {
@@ -376,10 +399,10 @@ body {
 .menu-section-title {
     font-family: var(--font-display);
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
     color: var(--color-navy);
-    
+    text-align: center;
     
 }
 
@@ -435,11 +458,17 @@ body {
     
 }
 
+.add-info {
+padding-left: 500px;
+margin-top:1.5rem;
+ margin-bottom: 2rem;}
+
 .menu-item-name {
     font-weight: 400; 
    
      
 }
+
 
 .menu-item-price {
     color: var(--color-primary);
@@ -538,15 +567,27 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: min(86vh, 720px);
-    width: min(520px, 94vw);
+
+    /* ✅ FIXED WIDTH HANDLING */
+    width: 94vw;          /* always fits screen */
+    max-width: 520px;     /* keeps desktop size nice */
+
+    /* ✅ FIXED HEIGHT HANDLING */
+    max-height: 90vh;     /* prevents overflow on phone */
+    overflow-y: auto;     /* scroll inside instead of breaking layout */
+
     background: var(--color-white);
     border: 1px solid rgba(20, 33, 61, 0.14);
     border-radius: 16px;
     box-shadow: 0 20px 45px rgba(20, 33, 61, 0.3);
+
+    /* ✅ CENTERING + SMOOTH SCALE */
     transform: translate(-50%, -50%) scale(0.94);
+    transform-origin: center;
+
     opacity: 0;
     transition: transform var(--transition), opacity var(--transition);
+
     z-index: 1300;
     display: flex;
     flex-direction: column;
@@ -854,12 +895,44 @@ body {
     }
 
     /* NAV */
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .cart-trigger {
+        margin-right: 0.5rem;
+    } 
+    
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+
     .nav {
+        justify-content: space-between;
         padding: 1rem;
     }
 
-    .nav-logo {
-        font-size: 1.3rem;
+     .nav.open .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+
+        background: var(--color-navy);
+        padding: 5rem 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        z-index: 1500;
     }
 
     /* HERO */
@@ -930,5 +1003,10 @@ body {
     .footer {
         padding: 1.5rem 1rem;
     }
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 }
 }
