@@ -445,6 +445,7 @@ body {
     flex-shrink: 0;
 }
 
+
 .menu-item-body {
     flex: 1;
 }
@@ -458,9 +459,10 @@ body {
 }
 
 .add-info {
-padding-left: 500px;
-margin-top:1.5rem;
- margin-bottom: 2rem;}
+    text-align: center;
+    margin-top:1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);               }
 
 .menu-item-name {
     font-weight: 400; 
@@ -979,6 +981,11 @@ margin-top:1.5rem;
     .menu-item-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .menu-item-image {
+        width: 100%;
+        height: 70%;
     }
 
     .menu-item-price {
